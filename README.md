@@ -46,8 +46,6 @@ While IG explains which tokens matter, LayerConductance explains:
 
 At which transformer layers those tokens influence the final prediction. We focus specifically on the [SEP] token, which marks the boundary between segments (rules/facts vs query).
 
-What LayerConductance measures
-
 LayerConductance computes: How much a given layer’s activations contribute to the final output.
 
 In this analysis: Conductance is computed per transformer layer. Attribution is extracted only for the [SEP] token. Values are normalized across layers. The result is a layer-wise contribution curve
