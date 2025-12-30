@@ -14,11 +14,7 @@ Results :
 
 Key implementation details:
 
-[PAD] tokens are used as the baseline
-
-[CLS] and [SEP] are masked only during visualization, not removed from the model
-
-Masking is done to focus on semantic content tokens, since [CLS] and [SEP] are control tokens that often dominate attribution due to their structural role.
+[PAD] tokens are used as the baseline . [CLS] and [SEP] are masked only during visualization, not removed from the model. Masking is done to focus on semantic content tokens, since [CLS] and [SEP] are control tokens that often dominate attribution due to their structural role.
 
 What the IG visualizations show
 
@@ -42,11 +38,7 @@ Attribution is distributed across meaningful predicates and rules. Both positive
 
 Attribution is often more uniform. Repeated or frequent tokens dominate. Fewer strong negative attributions appear. This reflects: Generic lexical matching rather than structured reasoning.
 
-IG convergence delta
 
-The reported IG convergence delta measures numerical approximation quality:
-
-The difference between the model’s output change and the sum of attributions.
 
 **LayerConductance (Layer-wise Structural Analysis)**
 
