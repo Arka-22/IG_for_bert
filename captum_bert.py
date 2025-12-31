@@ -275,10 +275,6 @@ print("Loading tokenizer and model...")
 tokenizer = AutoTokenizer.from_pretrained("sunayana981/bert",
     subfolder="BERT)
     # Optional: enforce specials if missing, then resize model later.
-specials = ["[AND]", "[THEN]"]
-if not all(t in tokenizer.get_vocab() for t in specials):
-    print("Special tokens missing in tokenizer; adding them now.")
-    tokenizer.add_special_tokens({"additional_special_tokens": specials})
 
 
 config = AutoConfig.from_pretrained("sunayana981/bert",
