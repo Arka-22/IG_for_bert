@@ -88,3 +88,12 @@ This multi-level analysis demonstrates that fine-tuning changes not only accurac
 Fine-tuning BERT shifts structural processing (e.g., [SEP]) to earlier layers and promotes content-driven reasoning in later layers, as evidenced by both token-level and layer-wise attribution analyses.This provides interpretable, causal evidence that the fine-tuned model reasons in a more task-aligned and faithful manner than the base pretrained model.
 
 
+PCA Plot : 
+
+PCA for 2d plots and the mean is calculated for 768D
+The mean represents Margin
+ 
+Margin answers one specific question about the decisions:
+Large margin → far from boundary → robust, confident
+Small margin → close to boundary → fragile, ambiguous
+( taken from documentation )
